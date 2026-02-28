@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "AliExpress - Skip Bundle Deals",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.aliexpress.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
